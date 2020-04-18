@@ -38,7 +38,7 @@ public class CreateFlashCard {
          question [i] = input.nextLine();   
       }
       
-      //repeats enetered questions
+      //repeats entered questions
       System.out.println();
       System.out.println("Your questions are:");
       System.out.println();
@@ -69,8 +69,12 @@ public class CreateFlashCard {
       System.out.println("Which question would you like to look at?");
       int checkQ = input.nextInt()-1;
       input.nextLine();
-   
-      System.out.println("Question: " + question[checkQ]);    
+      
+      if (checkQ <= length - 1 && checkQ > -1){
+         System.out.println("Question: " + question[checkQ]);
+      } else {
+         System.out.println("Invalid Input. Answer does not exist.");
+      }   
    }
    
    //allows user to check answer of one previously entered
@@ -79,9 +83,13 @@ public class CreateFlashCard {
       Scanner input = new Scanner(System.in);
       System.out.println();
       System.out.println("Which answer would you like to look at?");
-      int checkQ = input.nextInt()-1;
+      int checkA = input.nextInt()-1;
       input.nextLine();
-   
-      System.out.println("Answer: " + answer[checkQ]);
+      
+      if (checkA <= length - 1 && checkA > -1){
+         System.out.println("Answer: " + answer[checkA]);
+      } else {
+         System.out.println("Invalid Input. Answer does not exist.");
+      }
    }
 }
