@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CreateFlashCard {
@@ -34,7 +33,7 @@ public class CreateFlashCard {
       Scanner input = new Scanner(System.in);
  
       for(int i = 0; i < length; i++){
-         System.out.println("Please enter a question "+(i+1));
+         System.out.println("Please enter question "+(i+1));
          question [i] = input.nextLine();   
       }
       
@@ -48,7 +47,7 @@ public class CreateFlashCard {
       
       System.out.println();
       for(int b = 0; b < length; b++){
-         System.out.println("Please enter your answer "+(b+1));
+         System.out.println("Please enter answer "+(b+1));
          answer[b] = input.nextLine();   
       }
       
@@ -73,7 +72,7 @@ public class CreateFlashCard {
       if (checkQ <= length - 1 && checkQ > -1){
          System.out.println("Question: " + question[checkQ]);
       } else {
-         System.out.println("Invalid Input. Answer does not exist.");
+         System.out.println("Invalid Input. Question does not exist.");
       }   
    }
    
