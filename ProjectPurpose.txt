@@ -1,0 +1,9 @@
+Jeremiah Smith
+Rashad Ramaileh
+	To help students study for finals, a program to display user created flashcards would be useful.
+ A menu will be displayed to the user to offer a type of flash card (What information is held). This will 
+utilize a switch. Once a type is chosen, a method would be called to guide the user through the process of 
+creating flashcards. The package java.util.ArrayLists will be used to add information. When the user is 
+ready, another method will be called to display each flashcard on a Jpane window. If the user enters the
+ right information, the card will not be displayed. The user can leave if the Jpane is closed or all 
+flashcards are completed. 
